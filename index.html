@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper-like app – мое первое приложение на стороне клиента</title>
+</head>
+<body>
+    <section>
+        <div>
+            <h1 class="whiteColor">Paper-Like app</h1>
+            <p class="whiteColor">Сейчас самое время навести порядок в своем списке дел и завести новый онлайн-планировщик, органайзер и
+                календарь,
+                чтобы в этом году уж наверняка стать более эффективным и продуктивным.</p>
+            <form>
+                <input type="search" placeholder="Поиск задач из списка" id="searchTextBox">
+            </form>
+            <button id="deleteAllBtn" title="очистить список задач">Очистить весь список</button>
+        </div>
+
+        <div class="white">
+            <div class="addItems">
+                <input type="text" placeholder="Напишите новую задачу" id="addTaskInput">
+                <input type="hidden" id="saveIndex">
+                <button id="addTaskBtn" title="Добавить задачу" class="green">Добавить задачу</button>
+                <button id="saveTaskBtn" style="display:none;" title="Сохранить" class="green">Сохранить</button>
+            </div>
+
+            <table id="addedTaskList" cellpading="0" cellspacing="0"></table>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
